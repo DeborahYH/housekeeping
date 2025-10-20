@@ -1,0 +1,30 @@
+# Virtual Environment
+venv/
+env/
+*.pyc
+__pycache__/
+
+# VS Code Settings
+.vscode/
+
+# SQLite Databse Files
+*.sqlite3
+
+# Media and Upload Files
+media/
+staticfiles/
+
+# Log files
+*.log
+
+# Local Settings
+.env
+*.env
+
+# Pip Cache
+pip-log.txt
+pip-delete-this-directory.txt
+
+# OS Temporary Files
+.DS_Store
+Thumbs.db
