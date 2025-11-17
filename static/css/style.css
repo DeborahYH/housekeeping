@@ -158,6 +158,21 @@ button.hamburger, button.close {
 }
 
 
+/* CAROUSEL */
+
+.carousel {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 1;
+}
+
+
 /* --- MENU DESKTOP --- */
 
 @media (min-width: 769px) {
@@ -189,6 +204,7 @@ button.hamburger, button.close {
         position: absolute;
         background: var(--bg-light);
         border: 1px solid var(--border-grey);
+        z-index: 999;
     }
 
     .dropdown.show {
@@ -237,4 +253,14 @@ button.hamburger, button.close {
         display: none;
     }
 
+    .carousel-inner {
+        object-fit: contain;
+        height: 70vh;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 5rem;
+        height: 5rem;
+    }
+    
 }
