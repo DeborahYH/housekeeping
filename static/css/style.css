@@ -21,7 +21,7 @@
 }
 
 
-/* MENU MOBILE (DEFAULT) */
+/* MOBILE (DEFAULT) */
 
 body {
     background-color: var(--bg-dark);
@@ -80,7 +80,6 @@ button.hamburger, button.close {
 #icon-hamburger {
     margin-right: 0.5rem;;
 }
-
 
 /* ACCORDION MENU (OFFCANVAS / OVERLAY) */
 
@@ -173,7 +172,38 @@ button.hamburger, button.close {
 }
 
 
-/* --- MENU DESKTOP --- */
+/* CATEGORIES */
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1.3rem;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--txt-dark);
+    text-decoration: none;
+    margin: 0.3rem;
+}
+
+.category-card img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+.category-card h3 {
+    margin-top: 0.2rem;;
+    font-size: 0.8rem;
+}
+
+
+/* DESKTOP */
 
 @media (min-width: 769px) {
         
@@ -253,6 +283,9 @@ button.hamburger, button.close {
         display: none;
     }
 
+
+    /* CAROUSEL */
+
     .carousel-inner {
         object-fit: contain;
         height: 70vh;
@@ -262,5 +295,23 @@ button.hamburger, button.close {
         width: 5rem;
         height: 5rem;
     }
+
     
+    /* CATEGORIES */
+
+    .categories {
+        margin: 3rem 8rem;
+    }
+
+    .category-card img {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+    }
+
+    .category-card h3 {
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+    }
+
 }
