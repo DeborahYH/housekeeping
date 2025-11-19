@@ -202,6 +202,46 @@ button.hamburger, button.close {
     font-size: 0.8rem;
 }
 
+/* NEW RECIPES */
+
+.new-recipes {
+    margin: 1.3rem;
+    font-family: var(--heading-font);
+    color: var(--txt-dark);
+}
+
+.new-recipes h2 {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.recipes-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.recipes-container a {
+    flex-direction: column;
+}
+
+.recipe-card {
+    text-decoration: none;
+}
+
+.recipe-card img {
+    width: 17vw;
+    height: auto;
+    margin-top: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+    color: var(--txt-dark);
+    margin-top: 0.2rem;
+}
+
 
 /* DESKTOP */
 
@@ -312,6 +352,21 @@ button.hamburger, button.close {
     .category-card h3 {
         margin-top: 0.5rem;
         font-size: 1.3rem;
+    }
+
+    /* NEW RECIPES */
+
+    .new-recipes {
+        margin: 0rem 8rem;
+    }
+
+    .recipe-card img {
+        border-radius: 0.5rem;
+    }
+
+    .recipe-card p {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
     }
 
 }
