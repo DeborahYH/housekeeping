@@ -16,13 +16,17 @@
 /* BASE */
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 
 /* MOBILE (DEFAULT) */
+
+html, body {
+    height: 100%;
+}
 
 body {
     background-color: var(--bg-dark);
@@ -305,6 +309,74 @@ button.hamburger, button.close {
     font-weight: bold;
 }
 
+footer {
+    background-color: var(--primary);
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.footer-overview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 1.3rem;
+}
+
+.footer-container img {
+    width: 3rem;
+    height: auto;
+    margin-right: 0.7rem;
+}
+
+.footer-overview p {
+    font-family: var(--text-font);
+    color: white;
+    text-align: justify;
+    font-size: 0.75rem;
+    margin: 0rem;
+}
+
+.footer-personal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    border-radius: 0.8rem;
+    margin: 1rem 2rem;
+    padding: 1rem;
+}
+
+.footer-links a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links img {
+    width: 2rem;
+    margin: 0 auto;
+}
+
+.footer-links p {
+    margin: 0.5rem 0rem 0rem;
+    font-size: 0.8rem;
+}
+
+footer > p {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+    border-top: 1px solid var(--light);
+    margin-top: 0.7rem;
+}
 
 /* DESKTOP */
 
@@ -461,6 +533,52 @@ button.hamburger, button.close {
 
     .news-content {
         margin-left: 1rem;
+    }
+
+    /* FOOTER */
+    
+    footer {
+        margin-top: 7rem;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 3rem;
+    }
+    
+    .footer-overview {
+        align-items: center;
+    }
+    
+    .footer-overview img {
+        width: 7rem;
+    }
+    
+    .footer-overview p {
+        font-size: 1.2rem;
+    }
+    
+    .footer-personal {
+        width: 50vw;
+        padding: 1rem;
+        justify-content: space-around;
+        border: 1px solid white;
+        border-radius: 0.5rem;
+    }
+
+    .footer-links img {
+        width: 3rem;
+    }
+
+    .footer-links p {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+        margin-top: 0rem;
     }
 
 }
