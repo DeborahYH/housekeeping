@@ -1,0 +1,121 @@
+/* MOBILE (DEFAULT) */
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-info-profile img {
+    display: block;
+    width: 5rem;
+}
+
+.user-info-data p {
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+.user-info-icons img {
+    width: 1.7rem;
+    margin: 0.3rem 0.5rem;
+    cursor: pointer;
+}
+
+.user-tabs {
+    height: 90%;
+}
+
+.tabs-buttons {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-btn {
+    width: 6rem;
+    padding: 0.5rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background: var(--dark);
+    border-bottom: 2px solid rgb(105, 47, 24);
+    font-weight: bold;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    margin: 1rem 2rem;
+    text-decoration: underline;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+/* DESKTOP */
+
+
+@media (min-width: 769px) {
+        
+    .user-container {
+        width: 70%;
+        margin: 3rem auto;
+        flex-direction: row;
+    }
+
+    .user-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 15%;
+        padding: 2.5rem;
+        border-right: 1px solid #ccc;
+        border-bottom: none;
+    }
+
+    .user-info-profile img {
+        width: 7rem;
+    }
+
+    .user-info-data p {
+        margin: 0.8rem 0rem;
+    }
+
+    .user-tabs {
+        width: 85%;
+    }
+
+    .tab-btn {
+        width: 10rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .tab-content {
+        margin: 1.5rem 2.5rem;
+    }
+
+}
