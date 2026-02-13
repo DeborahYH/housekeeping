@@ -187,21 +187,481 @@
         </div>
 
         <div class="user-tabs">
+
             <div class="tabs-buttons">
                 <button class="tab-btn active" id="tab1">Recipes</button>
                 <button class="tab-btn" id="tab2">Pantry</button>
                 <button class="tab-btn" id="tab3">Meal Prep</button>
             </div>
+
             <div class="tabs-body">
+
                 <div class="tab-content active">
-                    <h3>Recipes</h3>
+
+                    <h5>Saved Recipes</h5>
+                    <div class="tab-recipes">
+                        <a href="#" class="recipe-card">
+                            <img src="{% static 'img/recipe.jpg' %}" alt="Recipe 1">
+                            <p>Recipe 1</p>
+                        </a>
+                        <a href="#" class="recipe-card">
+                            <img src="{% static 'img/recipe.jpg' %}" alt="Recipe 2">
+                            <p>Recipe 2</p>
+                        </a>
+                        <a href="#" class="recipe-card">
+                            <img src="{% static 'img/recipe.jpg' %}" alt="Recipe 3">
+                            <p>Recipe 3</p>
+                        </a>
+                        <a href="#" class="recipe-card">
+                            <img src="{% static 'img/recipe.jpg' %}" alt="Recipe 4">
+                            <p>Recipe 4</p>
+                        </a>
+                    </div>
+
+                    <hr>
+
+                    <h5>Published Recipes</h5>
+                    <div class="tab-recipes">
+                        <a href="#" class="recipe-card">
+                            <img src="{% static 'img/recipe.jpg' %}" alt="Recipe 1">
+                            <p>Recipe 1</p>
+                        </a>
+                        <a href="#" class="recipe-card">
+                            <img src="{% static 'img/recipe.jpg' %}" alt="Recipe 2">
+                            <p>Recipe 2</p>
+                        </a>
+                        <a href="#" class="recipe-card">
+                            <img src="{% static 'img/recipe.jpg' %}" alt="Recipe 3">
+                            <p>Recipe 3</p>
+                        </a>
+                        <a href="#" class="recipe-card">
+                            <img src="{% static 'img/recipe.jpg' %}" alt="Recipe 4">
+                            <p>Recipe 4</p>
+                        </a>
+                    </div>
+
                 </div>
+
                 <div class="tab-content">
-                    <h3>Pantry</h3>
+
+                    <div class="tab-pantry-categories">
+                        <div class="category-list">
+                            <div class="category-buttons">
+                                <button class="category-name">Category 1</button>
+                                <button class="category-icon"><img src="{% static 'users/img/edit.png' %}"></button>
+                                <button class="category-icon"><img src="{% static 'users/img/trash.png' %}"></button>
+                            </div>
+                            <div class="category-items">
+                                <p>Item 1</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 2</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 3</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="category-list">
+                            <div class="category-buttons">
+                                <button class="category-name">Category 2</button>
+                                <button class="category-icon"><img src="{% static 'users/img/edit.png' %}"></button>
+                                <button class="category-icon"><img src="{% static 'users/img/trash.png' %}"></button>
+                            </div>
+                            <div class="category-items">
+                                <p>Item 1</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 2</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 3</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="category-list">
+                            <div class="category-buttons">
+                                <button class="category-name">Category 3</button>
+                                <button class="category-icon"><img src="{% static 'users/img/edit.png' %}"></button>
+                                <button class="category-icon"><img src="{% static 'users/img/trash.png' %}"></button>
+                            </div>
+                            <div class="category-items">
+                                <p>Item 1</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 2</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 3</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="category-list">
+                            <div class="category-buttons">
+                                <button class="category-name">Category 4</button>
+                                <button class="category-icon"><img src="{% static 'users/img/edit.png' %}"></button>
+                                <button class="category-icon"><img src="{% static 'users/img/trash.png' %}"></button>
+                            </div>
+                            <div class="category-items">
+                                <p>Item 1</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 2</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 3</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="category-list">
+                            <div class="category-buttons">
+                                <button class="category-name">Category 5</button>
+                                <button class="category-icon"><img src="{% static 'users/img/edit.png' %}"></button>
+                                <button class="category-icon"><img src="{% static 'users/img/trash.png' %}"></button>
+                            </div>
+                            <div class="category-items">
+                                <p>Item 1</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 2</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                                <p>Item 3</p>
+                                <ul>
+                                    <li>Quantity</li>
+                                    <li>Expiration Date</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pantry-table">
+                        <table>
+                            <tr>
+                                <th>Item</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Expiration Date</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Item 1</td>
+                                <td>Category</td>
+                                <td>Quantity</td>
+                                <td>Date</td>
+                                <td>
+                                    <button class="category-icon"><img src="{% static 'users/img/edit.png' %}" alt="Edit"></button>
+                                    <button class="category-icon"><img src="{% static 'users/img/trash.png' %}" alt="Delete"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Item 2</td>
+                                <td>Category</td>
+                                <td>Quantity</td>
+                                <td>Date</td>
+                                <td>
+                                    <button class="category-icon"><img src="{% static 'users/img/edit.png' %}" alt="Edit"></button>
+                                    <button class="category-icon"><img src="{% static 'users/img/trash.png' %}" alt="Delete"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Item 3</td>
+                                <td>Category</td>
+                                <td>Quantity</td>
+                                <td>Date</td>
+                                <td>
+                                    <button class="category-icon"><img src="{% static 'users/img/edit.png' %}" alt="Edit"></button>
+                                    <button class="category-icon"><img src="{% static 'users/img/trash.png' %}" alt="Delete"></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
                 </div>
+
                 <div class="tab-content">
-                    <h3>Meal Prep</h3>
+
+                    <div class="tab-prep-days">
+                        <div class="day-list">
+                            <button class="day-button">Monday</button>
+                            <div class="day-meals">
+                                <button class="meal-button">Breakfast</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Lunch</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>  
+                            <div class="day-meals">
+                                <button class="meal-button">Dinner</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Snacks</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="day-list">
+                            <button class="day-button">Tuesday</button>
+                            <div class="day-meals">
+                                <button class="meal-button">Breakfast</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Lunch</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>  
+                            <div class="day-meals">
+                                <button class="meal-button">Dinner</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Snacks</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="day-list">
+                            <button class="day-button">Wednesday</button>
+                            <div class="day-meals">
+                                <button class="meal-button">Breakfast</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Lunch</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>  
+                            <div class="day-meals">
+                                <button class="meal-button">Dinner</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Snacks</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="day-list">
+                            <button class="day-button">Thursday</button>
+                            <div class="day-meals">
+                                <button class="meal-button">Breakfast</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Lunch</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>  
+                            <div class="day-meals">
+                                <button class="meal-button">Dinner</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Snacks</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="day-list">
+                            <button class="day-button">Friday</button>
+                            <div class="day-meals">
+                                <button class="meal-button">Breakfast</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Lunch</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>  
+                            <div class="day-meals">
+                                <button class="meal-button">Dinner</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Snacks</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="day-list">
+                            <button class="day-button">Saturday</button>
+                            <div class="day-meals">
+                                <button class="meal-button">Breakfast</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Lunch</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>  
+                            <div class="day-meals">
+                                <button class="meal-button">Dinner</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Snacks</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="day-list">
+                            <button class="day-button">Sunday</button>
+                            <div class="day-meals">
+                                <button class="meal-button">Breakfast</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Lunch</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>  
+                            <div class="day-meals">
+                                <button class="meal-button">Dinner</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                            <div class="day-meals">
+                                <button class="meal-button">Snacks</button>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
 
         </div>
