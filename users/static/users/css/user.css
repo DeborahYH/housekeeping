@@ -4,12 +4,11 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 100%;
+    overflow: visible;
     background-color: white;
     margin: 2rem auto;
     border: 1px solid #ccc;
     border-radius: 0.2rem;
-
 }
 
 .user-info {
@@ -38,10 +37,6 @@
     cursor: pointer;
 }
 
-.user-tabs {
-    height: 90%;
-}
-
 .tabs-buttons {
     display: flex;
     border-bottom: 1px solid #ccc;
@@ -66,7 +61,16 @@
 .tab-content {
     display: none;
     margin: 1rem 2rem;
+}
+
+hr {
+    padding-bottom: 1rem;
+}
+
+.tab-content h5 {
     text-decoration: underline;
+    text-align: center;
+    margin-bottom: 0.8rem;
 }
 
 .tab-content.active {
@@ -74,8 +78,113 @@
 }
 
 
-/* DESKTOP */
+/* MOBILE - TABS (DEFAULT) */
 
+.tab-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.recipe-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 23vw !important;
+    height: auto;
+}
+
+.recipe-card p:hover {
+    text-decoration: underline;
+}
+
+.tab-pantry-categories {
+    display: flex;
+    flex-direction: column;
+    margin: 1.8rem 0rem;
+}
+
+.category-list {
+    border: 1px solid var(--primary);
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary);
+    margin-bottom: 0.7rem;
+}
+
+.category-name {
+    width: 70%;
+    text-align: left;
+    background: var(--primary);
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem 1rem;
+}
+
+.category-icon {
+    background: var(--primary);
+    border: none;
+    padding: 0rem 0.4rem;
+    cursor: pointer;
+}
+
+.category-items p {
+    margin: 0rem 0.6rem;
+    padding: 0rem 0.5rem;
+    text-decoration: underline;
+}
+
+.tab-pantry-table {
+    display: none;
+}
+
+.tab-prep-days {
+    display: flex;
+    flex-direction: column;
+    margin: 1.8rem 0rem;
+    border: 1px solid var(--primary);
+    border-top: none;
+}
+
+.day-button {
+    width: 100%;
+    text-align: center;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+}
+
+.day-meals {
+    padding-top: 0.5rem;
+}
+
+.meal-button {
+    background: white;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--primary);
+    border: none;
+    cursor: pointer;
+    margin-left: 0.7rem;
+    padding: 0.3rem 0.5rem;
+}
+
+
+/* DESKTOP */
 
 @media (min-width: 769px) {
         
@@ -113,9 +222,85 @@
         font-size: 1.2rem;
         cursor: pointer;
     }
-
+    
     .tab-content {
-        margin: 1.5rem 2.5rem;
+        margin: 2rem 3rem;
+    }
+    
+
+    .tab-content h5 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    hr {
+        padding-bottom: 1.5rem;
+    }
+
+    .recipe-card {
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .recipe-card img {
+        width: 20vw !important;
+        height: auto;
+    }
+
+    .tab-pantry-categories {
+        display: none;
+    }
+
+    .tab-pantry-table {
+        display: flex;
+        margin-top: 2.5rem;
+    }
+
+    .tab-pantry-table th, .tab-pantry-table td {
+        border: 1px solid var(--primary);
+        padding: 0rem 1rem;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .tab-pantry-table th {
+        background: var(--primary);
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .tab-pantry-table tr {
+        height: 2.5rem;
+    }
+
+
+    .category-icon {
+        background: white;
+    }
+
+
+    .tab-prep-days {
+        display: flex; 
+        flex-direction: row; 
+        margin-top: 2.5rem;
+    }
+
+    .day-list {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        border: 1px solid var(--primary);
+    }
+
+    .day-button {
+        text-align: center;
+        height: 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    .meal-button {
+        margin-left: 0.3rem;
     }
 
 }
